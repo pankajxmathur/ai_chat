@@ -1,4 +1,6 @@
-frappe>=14.0.0
+# AI MCP Chat Dependencies
+# Note: frappe is provided by the bench installation
+
 openai>=1.0.0
 anthropic>=0.7.0
 google-generativeai>=0.3.0
