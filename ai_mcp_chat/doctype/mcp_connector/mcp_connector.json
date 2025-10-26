@@ -1,0 +1,72 @@
+{
+  "doctype": "MCP Connector",
+  "module": "AI MCP Chat",
+  "label": "MCP Connector",
+  "fields": [
+    {
+      "fieldname": "connector_name",
+      "label": "Connector Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "connector_type",
+      "label": "Connector Type",
+      "fieldtype": "Select",
+      "options": "stdio\ntcp\nhttp",
+      "reqd": 1
+    },
+    {
+      "fieldname": "host",
+      "label": "Host",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "port",
+      "label": "Port",
+      "fieldtype": "Int"
+    },
+    {
+      "fieldname": "command",
+      "label": "Command",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "arguments",
+      "label": "Arguments",
+      "fieldtype": "JSON"
+    },
+    {
+      "fieldname": "environment_vars",
+      "label": "Environment Variables",
+      "fieldtype": "JSON"
+    },
+    {
+      "fieldname": "is_active",
+      "label": "Is Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "connection_status",
+      "label": "Connection Status",
+      "fieldtype": "Select",
+      "options": "Connected\nDisconnected\nError\nUnknown",
+      "default": "Unknown",
+      "read_only": 1
+    },
+    {
+      "fieldname": "last_tested",
+      "label": "Last Tested",
+      "fieldtype": "DateTime",
+      "read_only": 1
+    },
+    {
+      "fieldname": "tools_available",
+      "label": "Available Tools",
+      "fieldtype": "Int",
+      "read_only": 1,
+      "default": 0
+    }
+  ]
+}

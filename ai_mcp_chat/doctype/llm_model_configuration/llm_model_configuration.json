@@ -1,0 +1,84 @@
+{
+  "doctype": "LLM Model Configuration",
+  "module": "AI MCP Chat",
+  "label": "LLM Model Configuration",
+  "fields": [
+    {
+      "fieldname": "model_name",
+      "label": "Model Name",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "provider",
+      "label": "Provider",
+      "fieldtype": "Select",
+      "options": "OpenAI\nAnthropic\nGoogle\nLocal\nCustom",
+      "reqd": 1
+    },
+    {
+      "fieldname": "model_identifier",
+      "label": "Model Identifier",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "api_key_field",
+      "label": "API Key Field Name",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "base_url",
+      "label": "Base URL",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "max_tokens",
+      "label": "Max Tokens",
+      "fieldtype": "Int",
+      "default": 4096
+    },
+    {
+      "fieldname": "supports_streaming",
+      "label": "Supports Streaming",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "supports_vision",
+      "label": "Supports Vision",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "supports_tools",
+      "label": "Supports Tools",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "cost_per_1k_input",
+      "label": "Cost per 1K Input Tokens (USD)",
+      "fieldtype": "Currency",
+      "default": 0
+    },
+    {
+      "fieldname": "cost_per_1k_output",
+      "label": "Cost per 1K Output Tokens (USD)",
+      "fieldtype": "Currency",
+      "default": 0
+    },
+    {
+      "fieldname": "is_active",
+      "label": "Is Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Text"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "doctype": "AI Chat Thread",
+  "module": "AI MCP Chat",
+  "label": "AI Chat Thread",
+  "track_changes": 1,
+  "track_seen": 1,
+  "quick_entry": true,
+  "fields": [
+    {
+      "fieldname": "thread_id",
+      "label": "Thread ID",
+      "fieldtype": "Data",
+      "unique": 1,
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "user",
+      "label": "User",
+      "fieldtype": "Link",
+      "options": "User",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "title",
+      "label": "Title",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Text"
+    },
+    {
+      "fieldname": "model_used",
+      "label": "Model",
+      "fieldtype": "Link",
+      "options": "LLM Model Configuration",
+      "reqd": 1
+    },
+    {
+      "fieldname": "system_prompt",
+      "label": "System Prompt",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "temperature",
+      "label": "Temperature",
+      "fieldtype": "Float",
+      "default": 0.7
+    },
+    {
+      "fieldname": "max_tokens",
+      "label": "Max Tokens",
+      "fieldtype": "Int",
+      "default": 2048
+    },
+    {
+      "fieldname": "is_archived",
+      "label": "Archived",
+      "fieldtype": "Check"
+    },
+    {
+      "fieldname": "token_count",
+      "label": "Total Tokens",
+      "fieldtype": "Int",
+      "read_only": 1,
+      "default": 0
+    }
+  ],
+  "permissions": [
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}
