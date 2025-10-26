@@ -60,7 +60,7 @@ cd frappe-bench
 bench new-site site1.local
 
 # 3. Get the app
-bench get-app https://github.com/pankajxmathur/ai_chat.git ai_mcp_chat
+bench get-app ai_mcp_chat https://github.com/pankajxmathur/ai_chat.git
 
 # 4. Install dependencies
 cd apps/ai_mcp_chat

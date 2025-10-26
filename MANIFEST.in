@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ai_mcp_chat *.css
+recursive-include ai_mcp_chat *.csv
+recursive-include ai_mcp_chat *.html
+recursive-include ai_mcp_chat *.ico
+recursive-include ai_mcp_chat *.js
+recursive-include ai_mcp_chat *.json
+recursive-include ai_mcp_chat *.md
+recursive-include ai_mcp_chat *.png
+recursive-include ai_mcp_chat *.py
+recursive-include ai_mcp_chat *.svg
+recursive-include ai_mcp_chat *.txt
+recursive-exclude ai_mcp_chat *.pyc
